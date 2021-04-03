@@ -1,6 +1,5 @@
 const controlEl = document.querySelector("#font-size-control");
 const textEl = document.querySelector("#text");
-//textEl.classList.add(".text-decoration");
 
 controlEl.addEventListener("input", onChange);
 
