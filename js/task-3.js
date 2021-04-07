@@ -24,4 +24,4 @@ const imgList = document.querySelector("ul");
 const makeImgListRows = images.map(makeImgListMarkup).join("");
 console.log(makeImgListRows);
 imgList.insertAdjacentHTML("afterbegin", makeImgListRows);
-imgList.classList.add(decoration);
+imgList.classList.add("decoration");

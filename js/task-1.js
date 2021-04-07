@@ -1,16 +1,16 @@
-const categoryEl = document.querySelectorAll(".item");
-console.log(categoryEl);
-console.log(`В списке ${categoryEl.length} категории.`);
-
-const itemEl = document.querySelector(".item");
-const titleEl = itemEl.firstElementChild;
-console.log(`Категория: ${titleEl.textContent}`);
-console.log(`Количество элементов: ${itemEl.querySelectorAll("li").length}`);
-
-const lastEl = itemEl.nextElementSibling;
-console.log(`Категория: ${lastEl.firstElementChild.textContent}`);
-console.log(`Количество элементов: ${lastEl.querySelectorAll("li").length}`);
-
-const thirdEl = lastEl.nextElementSibling;
-console.log(`Категория: ${thirdEl.firstElementChild.textContent}`);
-console.log(`Количество элементов: ${thirdEl.querySelectorAll("li").length}`);
+const allItems = document.querySelectorAll(".item");
+console.log(`В списке ${allItems.length} категории.`);
+const listItem = document.querySelector(".item");
+// console.log(allItems[0].lastElementChild.children.length)
+console.log("Категория:", allItems[0].firstElementChild.textContent);
+console.log(
+  `Количество элементов: ${allItems[0].lastElementChild.children.length}`
+);
+console.log("Категория:", allItems[1].firstElementChild.textContent);
+console.log(
+  `Количество элементов: ${allItems[1].lastElementChild.children.length}`
+);
+console.log("Категория:", allItems[2].firstElementChild.textContent);
+console.log(
+  `Количество элементов: ${allItems[2].lastElementChild.children.length}`
+);
